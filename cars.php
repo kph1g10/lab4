@@ -76,11 +76,12 @@
 			foreach($cars as $car){ 
 				echo "<div class=\"carAdvert\">";
 				echo "<h3> {$car->getMake()} - {$car->getModel()} </h3>";
-				echo "<h4>Price: <font-color: red> £{$car->getPrice()}</font-color> </h4>";
+				echo "<h4>Price: £{$car->getPrice()}</h4>";
 				echo "<p><b>Colour: </b>{$car->getColour()} </p>";
 				echo "<p><b>Description: </b>{$car->getDescription()} </p>";
 				echo "<p><b>Registraion Number: </b>{$car->getReg()} </p>";
 				echo "<p><b>Registration Year: </b>{$car->getYear()} </p>";
+				echo "<p><b>Age of Car: </b>{$car->getAge()} </p>";
 				echo "</div>";
 			
 			 } 
