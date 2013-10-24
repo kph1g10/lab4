@@ -52,10 +52,8 @@
 	
 	<!-- car list -->
 	<div id="car-list" class="row">
-		
-		<!-- =========================== -->
-		<!-- PART 1 CAR LIST PLACEHOLDER -->
-		<!-- =========================== -->
+		<?php include 'data/carData.php'; ?>
+		<?php print_r($carData); ?>
 		
 	</div><!-- /car list -->
 	
