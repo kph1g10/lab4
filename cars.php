@@ -26,6 +26,7 @@
 	<p>View our wide range of fabulous cars and low low prices, and quality. Ensure your car is only sold by a Boyd approved dealership.</p>
 	
 	
+		
 	
 	<!-- DO NOT USE THIS UNTIL PART 2 -->
 	<!-- when told to, remove these comments -->
@@ -52,8 +53,30 @@
 	
 	<!-- car list -->
 	<div id="car-list" class="row">
-		<?php include 'data/carData.php'; ?>
-		<?php print_r($carData); ?>
+		<?php 
+			include 'data/carData.php';
+			include 'classes/car.class.php';
+			
+			
+			$cars = array();
+			
+			foreach($carData as $car){
+				$carObj = new Car(
+				
+					$car['make'],
+					$car['model'],
+					$car['colour'],
+					$car['description'],
+					$car['price'],
+					$car['reg_number'],
+					$car['reg_year']);
+					
+				$cars[] = $carObj;
+			}
+			
+		?>
+		
+		
 		
 	</div><!-- /car list -->
 	

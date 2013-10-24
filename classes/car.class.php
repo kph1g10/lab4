@@ -1,5 +1,5 @@
 <?php
-	class carAttributes{
+	class Car{
 		private $make;
 		private $model;
 		private $colour;
